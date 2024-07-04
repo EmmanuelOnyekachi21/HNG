@@ -16,8 +16,8 @@ class HandleViews(View):
         visitor = request.GET.get('visitor_name', 'Visitor')
 
         # Get the IP address of the requester
-        #client_ip = request.META.get('REMOTE_ADDR')
-        client_ip = '8.8.8.8'
+        client_ip = request.META.get('REMOTE_ADDR')
+        #client_ip = '8.8.8.8'
 
         # Fetch location Data using IPInfo API
         ipinfoAccessToken = 'd96d756a8e799e'
